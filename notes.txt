@@ -1,0 +1,76 @@
+Scope and mutability
+Blocak and function 
+
+1) Let --> if we pack let in curly braces we cannot access it outside the braces
+{let a=10,b=10;}
+console.log(a+b);
+
+reassignment possible.
+block scope and mutable
+
+
+2) var--->if we pack let in curly braces we can access it outside the braces
+{var a=10,b=10;}
+console.log(a+b);
+reassignment possible.
+global scope and mutable
+allow hoistiong but throw undefined
+
+3) const-->if we pack let in curly braces we cannot access it outside the braces
+{let a=10,b=10;}
+console.log(a+b);
+
+reassignment is not possible.
+const a = 10;
+console.log(a);
+ a= 20;
+console.log(a); //throw error.
+block scope and immutable
+
+
+it can be mutable but reassignment is not possible in case of object and array
+
+const person ={key:"Hello"};
+console.log(person.key);
+person.key = "Bye";
+console.log(person.key); //execute successfully
+
+
+
+
+Mutability--> 
+hoisting --> when we use before it declaration
+
+
+4) == and ===  
+console.log(5=='5'); its chack value only number so it return true.
+console.log(5==='5'); its check data type and reutrn false.
+
+
+
+5)parameter simply a placeholder
+ and 
+argunment hold the actual value
+
+
+learn about loop----->
+
+------- React -------
+
+
+.gitignore used for not sharing creditentials
+
+
+index.html-> main.js->app.js
+jsx-js xml to create using html and working using js
+react works on component programming.->> write a part of code and call it whenever required
+hooks->overtake class componant
+functional component->inreact everything inside the function 
+componaent name should be in capital letter
+and whenver u want to display onn browser inside return statement and everything 
+
+
+-----git-------
+
+open terminal 
+type git init
