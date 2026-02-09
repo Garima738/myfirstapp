@@ -1,34 +1,60 @@
+// import './App.css'//to include the path of file like ./ for folder / file name 
+// import Header from'./components/Header.jsx'
+// import Registration from './components/Registration.jsx'
+// import Footer from './components/Footer.jsx'
+// function App() {
+//   const y=[2024,2025,2026]
+//   const c={name:"KIET",location:"Ghaziabad",estdyear:1998};
+//   return (
+//     <div className="app-container">
+//       <Header title="My first react app"/>
 
-import './App.css' 
-//path likhna pdta h if folder m h toh ./folder name/file name
+//       <main className="main-section">
+//         <Registration/>
+//       </main>
+// <card>
+//   <h1>This is child</h1>
+//   <h2>THis Demo</h2>
+// </card>
+// <Footer year={y} company={c}/>
+// </div>
+//   )
+// }
 
-import Header from'./components/Header.jsx'
-
-import Footer from'./components/Footer.jsx'
-import Registration from'./components/Registration.jsx'
-
-
-
-function App() {
-const y = [2024,2025,2026];
-
-const c = {name:"KIET",location:"ghaziabad",esdyear:1998}
-
-  return (
-   <div>
-    <Header title="My First React App"/> 
-    <Header title = "Lets Explore FSD Together"/>  
-
-    <Registration/>
-    <Footer year= {y} name={c}/>
-
-
-
+//  export default App
 
 
-</div>
+import Wrapper from "./components/Wrapper";
 
-  )
+import UserCard from "./components/UserCard";
+
+ 
+export default function App(){
+  const users = [
+    {
+      name: "Virat Kohli",
+      role: "BatsMan",
+      country: "India"
+    },
+    {
+      name: "Ms.Dhoni",
+      role: "Wk-Batsman",
+      country: "India"
+    }
+  ];
+  return <div>
+    <h1> User DashBoard</h1>
+    <Wrapper title = "User list">
+
+  {users.map((data, index) => (
+    <UserCard key={index} data={data} />
+))}
+
+
+    </Wrapper>
+    {/* <wrapper title = "Product list">
+
+    </wrapper> */}
+
+  </div>;
 }
-
- export default App

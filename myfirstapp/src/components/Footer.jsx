@@ -1,13 +1,12 @@
-
-import "./Footer.css";
-export default function Footer(props) {
-  
-  return (
-    <footer>
-      <nav classname="foot">
-      <p>{props.year[1]} {props.name.location}</p>
-      </nav>
-    </footer>
-  );
+export default function Footer(props)
+{
+   
+    return(
+        <>
+        <footer className="footer">
+            <p>{props.year[2]}  {props.company.location}</p>
+        </footer>
+        
+        </>
+    )
 }
-

@@ -1,47 +1,28 @@
-import"./Registration.css";
-export default function Registration()
+import "./Registration.css"
 
+export default function Registration() {
+  return (
+    <div className="form-container">
+      <h2>Registration Form</h2>
 
-{
-    return(
-        <div >
-            <nav class="reg"> 
-            <form >
+      <form className="form">
+        <label>
+          Name
+          <input type="text" placeholder="Enter your name" />
+        </label>
 
-                <label>
-                    Name:
-                    <input 
-                        type="text" 
-                        placeholder="Provide your name" 
-                    />
-                </label>
+        <label>
+          Email
+          <input type="email" placeholder="Enter your email" />
+        </label>
 
-                <br /><br />
+        <label>
+          Number
+          <input type="number" placeholder="Enter your number" />
+        </label>
 
-                <label>
-                    Email:
-                    <input 
-                        type="email" 
-                        placeholder="Provide your email" 
-                    />
-                </label>
-
-                <br /><br />
-
-                <label>
-                    Password:
-                    <input 
-                        type="password" 
-                        placeholder="Provide your password" 
-                    />
-                </label>
-
-                <br /><br />
-
-                <button type="submit">Register</button>
-
-            </form>
-            </nav>
-            </div>
-            )
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  )
 }
