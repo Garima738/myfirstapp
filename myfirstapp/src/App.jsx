@@ -45,7 +45,7 @@ export default function App(){
   return <div>
     <h1> User DashBoard</h1>
     <Wrapper title = "User list">
-
+    
   {users.map((data, index) => (
     <UserCard key={index} data={data} />
 ))}

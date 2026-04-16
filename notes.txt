@@ -56,6 +56,11 @@ argunment hold the actual value
 learn about loop----->
 
 ------- React -------
+//react is a library of js 
+// node js npm---node package manager(if need functionality we need to download it using npm)
+//npx create-react-app FirstApp (slower and heavier)
+//npm
+//  create vite@latest(faster and lighter)
 
 
 .gitignore used for not sharing creditentials
@@ -74,3 +79,61 @@ and whenver u want to display onn browser inside return statement and everything
 
 open terminal 
 type git init
+git add
+git status //for everday changes
+git commit -m "Initial Commit"//for everday changes
+git branch -M main (-M is means its my main branch and give it name main)
+git remote add origin https://github.com/Garima738/myfirstapp.git 
+git push -u origin main //for everday changes
+
+
+npm rum dev
+
+
+probs--->>>>.
+import "./Footer.css";
+export default function Footer(props) {
+  return (
+    <footer>
+      <nav classname="foot">
+      <p>{props.year} {props.name}</p>
+      </nav>
+    </footer>
+  );
+}
+
+//we can use any keyword inplac eof props it is not mandatory to use props.
+passing array.....
+const y = [2024,2025,2026]; using array we can get the value we want by passing index value.
+ <Footer year= {y[0]} name="KIET"/>
+
+
+
+//----**** passing of an object ***--------
+  <Footer year= {y} name={c}/> in footer
+  const c = {name:"KIET",location:"ghaziabad",esdyear:1998} in app.jsx
+
+
+  //destructured array 
+
+
+
+
+daily push work on github
+ git status
+ git add .
+ git commit -m “project name”
+ git status
+git push -u origin main
+
+
+
+axios----------->>>>
+
+1. npm install axios
+2. import axios
+3. use axios
+axios.get(" ")
+.then(res=>console.log(res))
+.cat
+
